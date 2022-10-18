@@ -1,0 +1,929 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box
+}
+/*----it's important to remove the annoying white space -----*/
+html,body
+{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+body{
+  background:  ;
+
+
+}
+body .header
+{
+  position: relative;
+  top: 0;
+  background:  #e6f2ff;
+  width: 100%;
+  height: 100px
+}
+/*#menu
+{
+  position: relative;
+  top: 20px;
+  background: #008080;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px 
+}*/
+#menu span
+{
+  position: relative;
+  top: 10px;
+  background: white;
+  width: 20px;
+  height: 2px;
+ 
+}
+
+/*the top logo*/
+.header img
+{
+  position: absolute;
+  height: 40px;
+  right: 45px;
+  top: 30px;
+ /* margin-right: -800px;
+  margin-top: 30px;*/
+ 
+}
+/*bar of header*/
+.header a
+{
+  position: relative;
+  display: inline-block;
+  left: 700px;
+  top: 40px;
+  margin-left: 40px;
+  text-decoration: none;
+  color: #0d0d26;
+  font-family: 'Cairo', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  transition: .5s
+
+}
+.header a:hover
+{
+  color:  #008080
+
+}
+/*-----<تنسيق زر < تسجيل الدخول-----*/
+.header a:nth-child(7)
+{
+  position: absolute;
+  left: 380px;
+  outline: none;
+  display: grid;
+  place-items: center;
+  width: 150px;
+  border-radius: 25px;
+  height: 45px;
+  width: 150px;
+  transition: .5s
+}
+.header a:nth-child(7):hover
+{
+  background: #008080;
+  color: white;
+  border-radius: 25px;
+  height: 45px;
+  width: 150px;
+  top:41px
+}
+/*----<تنسيق زر <ابداء 14 يوم مجانا----*/
+.header a:nth-child(8)
+{
+  position: absolute;
+  left: 180px;
+  background: #008080;
+  color: white;
+  border-radius: 25px;
+  height: 45px;
+  width: 150px ;
+/*  padding-left: 4%;
+  padding-top: 1%;*/
+  display: grid;
+  place-items: center;
+  transition: .3s
+}
+.header a:nth-child(8):hover
+{
+  
+  top:42px
+}
+/*----تنسيق زر تحويل اللغة----*/
+.header div
+{
+  position: absolute;
+  top: 55px;
+  left: 65px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: arial;
+  text-transform: capitalize;
+  color: #0d0d26;
+  cursor: pointer;
+  
+ 
+}
+.header div:hover + .lang-en
+{
+  
+  display: block;
+  
+}
+
+/**/
+
+/*اظهار الزر اسفل زر تحويل اللغه*/
+.lang-en
+{
+  position: absolute;
+  display: none;
+  z-index: 5;
+  top:75px;
+  left: 65px;
+  padding-top: 6px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: arial;
+  text-transform: capitalize;
+  color: #0d0d26;
+  background:  #b3ffff;
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  border-radius: 0 0 5px 5px
+}
+
+.lang-en:hover
+{
+  background:#008080;
+  color: white;
+}
+
+.header div span
+{
+  position: absolute;
+  left: 75px;
+  font-size: 20px;
+  color: #0d0d26;
+  font-weight: bold
+ 
+}
+
+/*----تنسيق القائمه لتجاوب مقاس شاشه 480 بوصه----*/
+
+/*----منطقة "انشء موقع او متجر احترافى فى خمس دقائق"----*/
+.top-b
+{
+  position: relative;
+  /*top: 20px;*/
+  height: 500px;
+  width: 100%;
+  background:#e6f2ff
+}
+.top-b h1
+{
+  
+  position: absolute;
+  top: 100px;
+  right: 25%;
+  font-size: 55px;
+  font-weight: 1000;
+  font-family: 'Cairo', sans-serif;
+  text-align: center;
+  background: linear-gradient(to right, #00001a
+, #008080);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+    
+}
+.top-b p
+{
+  position: absolute;
+  top: 320px;
+  right: 28%;
+  font-family: 'Cairo', sans-serif;
+  color: #8585ad;
+  font-size: 18px;
+  font-weight: bold
+  
+}
+.top-b .start
+
+{
+  position: absolute;
+  z-index: 1;
+  top: 385px;
+  right: 37%;
+  background: #008080;
+  height:60px;
+  width: 295px;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: 'Cairo', sans-serif;
+  border-radius: 30px;
+  padding-top: 10px; 
+  transition: .3s
+}
+.top-b .start:hover
+{
+  top: 389px;
+}
+.top-b .start i
+{
+  position: absolute;
+
+  top: 32%;
+  left: 12%;
+  animation-name: arrow;
+   animation-duration: 1s;
+   animation-iteration-count: infinite;
+  animation-timing-function: linear
+}
+@keyframes arrow
+{
+  from{left: 12%}
+  to{left: 10%}
+}
+/*مجانا لمدة 14 يوم بدون بطاقه بنكيه او مصاريف خفيه*/
+.free
+{
+  position: relative;
+  top: -40px;
+  left: 520px;
+  width: 550px;
+  font-family: 'Cairo', sans-serif;
+  font-size: 15px;
+  font-weight: 900;
+  color: #8585ad
+}
+/*-----تنسيق الصور الخاصه بشرح الموقع----*/
+.image
+{
+  position: absolute;
+  top: 600px;
+  z-index: 6;
+}
+.image img:nth-child(1)
+{
+  position: absolute;
+  left: 280px;
+  height: 700px;
+  right: -200px;
+    box-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.2), 0 6px 70px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image img:nth-child(2)
+{
+  position: absolute;
+  left: 965px;
+  top: -85px;
+  height: 320px;
+  z-index: -1;
+}
+.image img:nth-child(3)
+{
+  position: absolute;
+  height: 500px;
+  top: 145px;
+  left: 60px;
+  z-index: 2;
+}
+.image img:nth-child(4)
+{
+  position: absolute;
+  height: 390px;
+  top: 250px;
+  right: -1300px;
+  z-index: 3;
+}
+.image img:nth-child(5)
+{
+  position: absolute;
+  height: 320px;
+  z-index: -1;
+  left: 60px;
+  top: -85px;
+  animation-name: circle;
+  animation-duration: 45s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear
+}
+@keyframes circle {
+  0%{
+     transform: rotate(0deg)
+  }
+  100%{
+    transform: rotate(360deg)
+  }
+ 
+}
+
+/*تقييم العملاء للموقع وعدد االعملاء*/
+.rate-site
+{
+  position: absolute;
+  top: 1400px;
+  width: 100%;
+  
+  
+}
+.rate-site .cust
+{
+  position: relative;
+  padding-right:50px;
+  background:  ;
+  height: 100%;
+  
+  
+  
+  
+}
+.rate-site .cust p:nth-child(1)
+{
+   font-family: 'Tajawal', sans-serif;
+  font-size: 50px;
+  font-weigth: 1000;
+   text-align: right;
+   background: linear-gradient(to right, #00001a
+, #00001a
+, #008080);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  
+}
+.rate-site .cust p:nth-child(2)
+{
+  font-family: 'cairo', sans-serif;
+  text-align: right;
+  font-size: 20px;
+  font-weight: 100;
+  color:   #30384f
+}
+.rate-site .rate
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  bottom: 50px;
+ /* padding-left: 50px;*/
+  padding-right: 50px;
+  background: ;
+
+  
+  
+}
+.rate-site .rate p:nth-child(1)
+{
+  margin-right: 75px;
+  margin-top: -30px;
+  font-size: 80px;
+  font-weight: 900;
+  color: #00001a;
+  font-family: 'Cairo', sans-serif;
+  float: right;
+  
+
+}
+
+.rate-site .rate p sub
+{
+  position: absolute;
+  bottom: 140px;
+  font-size: 40px;
+  float: right;
+  
+
+}
+.rate-site .rate img:nth-child(2)
+{
+  position: absolute;
+  bottom: 90px;
+  right: 75px;
+  height: 35px;
+
+}
+.rate-site .rate p:nth-child(3)
+{
+  position: absolute;
+  bottom: 15px;
+  right: 75px;
+  font-size:15px;
+  text-align: right;
+  font-family: 'Cairo', sans-serif;
+  color:   #30384f
+
+
+}
+.rate-site .rate p strong
+{
+  color: #0a0b10
+}
+.rate-site .rate img:nth-child(4)
+{
+  position: absolute;
+  bottom: -25px;
+  right: 75px;
+}
+/*------carsousel------*/
+
+.carousel-cell {
+  width: 66%;
+  height: 350px;
+  margin-right: 180px;
+  background: #8C8;
+  border-radius: 15px;
+  counter-increment: carousel-cell;
+}
+
+
+/*---lena----*/
+.lena
+{
+  position:absolute;
+  left: 0;
+  width: 100%;
+ 
+  height: 350px;
+  background:  #ccffff;
+  border-radius: 15px;
+
+  
+  
+
+}
+ .lena p
+{
+  position: absolute;
+  top: px;
+  left: 35px;
+  color: #001a33;
+  font-size: 23px;
+  font-family: 'Cairo', sans-serif;
+  line-height: 30px;
+  text-align: right;
+  
+}
+
+ .lena img
+{
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  height: 285px;
+  width: 267px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+ .lena img:nth-child(3)
+{
+  position: absolute;
+  left: 670px;
+  top: 240px;
+  height: 60px;
+  width: 267px;
+  border-radius: 10px;
+  cursor: pointer
+  
+  
+}
+ .lena h6
+{
+  position: absolute;
+  top: 290px;
+  left: 360px;
+  font-size: 16px;
+  font-family: 'Cairo', sans-serif;
+}
+ .lena h6 a
+{
+  text-decoration: none;
+  color: #008080
+}
+ .lena h5
+{
+  position: absolute;
+  top: 250px;
+  left: 410px;
+  font-size: 27px;
+  font-family: 'Tajawal', sans-serif;
+  color:#0d0d26
+
+}
+/*mena*/
+.mena
+{
+  position:absolute;
+  left: 0;
+  width: 100%;
+ 
+  height: 350px;
+  background:  #ccffff;
+  border-radius: 15px;
+
+  
+  
+
+}
+ .mena p
+{
+  position: absolute;
+  top: px;
+  left: 35px;
+  color: #001a33;
+  font-size: 23px;
+  font-family: 'Cairo', sans-serif;
+  line-height: 30px;
+  text-align: right;
+  
+}
+
+ .mena img
+{
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  height: 285px;
+  width: 267px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+ .mena img:nth-child(3)
+{
+  position: absolute;
+  left: 670px;
+  top: 240px;
+  height: 60px;
+  width: 267px;
+  border-radius: 10px;
+  cursor: pointer
+  
+  
+}
+ .mena h6
+{
+  position: absolute;
+  top: 290px;
+  left: 360px;
+  font-size: 16px;
+  font-family: 'Cairo', sans-serif;
+}
+ .mena h6 a
+{
+  text-decoration: none;
+  color: #008080
+}
+ .mena h5
+{
+  position: absolute;
+  top: 250px;
+  left: 410px;
+  font-size: 27px;
+  font-family: 'Tajawal', sans-serif;
+  color:#0d0d26
+
+}
+/*titana*/
+.titana
+{
+  position:absolute;
+  left: 0;
+  width: 100%;
+ 
+  height: 350px;
+  background:  #ccffff;
+  border-radius: 15px;
+
+  
+  
+
+}
+ .titana p
+{
+  position: absolute;
+  top: px;
+  left: 35px;
+  color: #001a33;
+  font-size: 23px;
+  font-family: 'Cairo', sans-serif;
+  line-height: 30px;
+  text-align: right;
+  
+}
+
+ .titana img
+{
+  position: absolute;
+  top: 30px;
+  right: 35px;
+  height: 285px;
+  width: 267px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+ .titana img:nth-child(3)
+{
+  position: absolute;
+  left: 670px;
+  top: 240px;
+  height: 60px;
+  width: 267px;
+  border-radius: 10px;
+  cursor: pointer
+  
+  
+}
+ .titana h6
+{
+  position: absolute;
+  top: 290px;
+  left: 360px;
+  font-size: 16px;
+  font-family: 'Cairo', sans-serif;
+}
+ .titana h6 a
+{
+  text-decoration: none;
+  color: #008080
+}
+ .titana h5
+{
+  position: absolute;
+  top: 250px;
+  left: 410px;
+  font-size: 27px;
+  font-family: 'Tajawal', sans-serif;
+  color:#0d0d26
+
+}
+
+
+.footer
+{
+  position: absolute;
+  top: 1750px;
+  background:  #131620;
+  width: 100%;
+  height: 550px;
+}
+.footer .contact-email
+{
+  position: absolute;
+  top: 150px;
+  left: 70px;
+  width: 200px;
+  
+}
+
+.footer .contact-email .email
+{
+  background:  #61709e;
+  height: 90px;
+  width: 200px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .5s
+}
+.footer .contact-email .email:hover
+{
+  background:  #595959
+
+
+
+
+}
+.footer .contact-email img
+{
+  border-radius: 50%;
+  float: right;
+  margin-right: 30px;
+  margin-top: 25px
+}
+.footer .contact-email p
+{
+  position: absolute;
+  color: white;
+  font-weight: 900;
+  font-family: 'Cairo', sans-serif;
+  bottom: 100px;
+  left: 125px;
+  width: 200px
+}
+.footer .contact-email .email p:nth-child(2)
+{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Cairo', sans-serif;
+}
+.footer .contact-email .email p:nth-child(3)
+{
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Cairo', sans-serif;
+}
+/*-------class "help"- from class "footer"-----*/
+.footer .help
+{
+  position: absolute;
+  font-family: 'Cairo', sans-serif;
+  color:  #bfbfbf;
+  font-weight: bold;
+  top: 80px;
+  left: 400px;
+  line-height: 45px;
+  text-align: right;
+  
+
+}
+.footer .help p:nth-child(1)
+{
+  color: white
+}
+.footer .help p:nth-child(n+2)
+{
+  
+  transition: .5s
+}
+.footer .help p:nth-child(n+2):hover
+{
+  color:#008080;
+  cursor: pointer
+}
+/**---class 'jop' from class "footer"----*/
+.footer .jop
+{
+  position: absolute;
+  font-family: 'Cairo', sans-serif;
+  color:  #bfbfbf;
+  font-weight: bold;
+  top: 80px;
+  left: 630px;
+  line-height: 45px;
+  text-align: right;
+  
+
+}
+
+.footer .jop p
+
+{
+  
+  transition: .5s
+}
+.footer .jop p:hover
+{
+  color:#008080;
+  cursor: pointer
+}
+
+/*----class "about"-from class "footer"---*/
+.footer .about
+{
+  position: absolute;
+  font-family: 'Cairo', sans-serif;
+  color:  #bfbfbf;
+  font-weight: bold;
+  top: 80px;
+  left: 780px;
+  line-height: 45px;
+  text-align: right;
+  
+
+}
+.footer .about p:nth-child(1)
+{
+  color: white
+}
+.footer .about p:nth-child(n+2)
+{
+  
+  transition: .5s
+}
+.footer .about p:nth-child(n+2):hover
+{
+  color:#008080;
+  cursor: pointer
+}
+/*----class "we-are" from class "footer"----*/
+.footer .we-are
+{
+  position: absolute;
+  top: 80px;
+  right: 0;
+}
+.footer .we-are img:nth-child(1)
+{
+  position: absolute;
+  right: 120px;
+  height: 50px;
+}
+.footer .we-are p
+{
+  position: absolute;
+  top: 50px;
+  right: 120px;
+  width: 350px;
+  text-align: right;
+  font-family: 'Cairo', sans-serif;
+  color: white;
+}
+.footer .we-are .social
+{
+  position: absolute;
+  top: 170px;
+  right: 120px;
+  width: 350px;
+}
+.footer .we-are .social i
+{
+  position: relative;
+  right: -140px;
+  background:    #6666ff
+;
+  width: 27px;
+  height: 27px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 5px;
+  margin-left: 12px;
+  color: white;
+  transition: .5s;
+}
+.footer .we-are .social i:hover
+{
+  background: #008080;
+  color: gray
+}
+.footer .we-are img:nth-child(4)
+{
+  position: relative;
+  top: 250px;
+  right: 120px;
+}
+/*الشريط  الثابت "اسهل طريقة لانشاء موقع او متجر الكترونى"*/
+.start-u-site
+{
+  position: fixed;
+  bottom:0;
+  background: #008080;
+  height: 75px;
+  width: 100%;
+  z-index: 10
+}
+.start-u-site span
+{
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  border-radius: 50px;
+  color: #008080;
+  font-family: 'Cairo', sans-serif;
+  background: white;
+  height: 50px;
+  width: 200px;
+  font-weight:bold;
+  padding-top: 10px;
+  text-align: center;
+  transition: .1s
+}
+
+.start-u-site span:hover
+{
+  background:  #00cccc
+;
+  color: white
+}
+.start-u-site p
+{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  font-family: 'Cairo', sans-serif;
+}
